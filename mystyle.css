@@ -1,0 +1,147 @@
+/*Font importing*/
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('./webfontkit-20211008-222110/bebasneue-regular-webfont.woff2') format('woff2'),
+         url('./webfontkit-20211008-222110/bebasneue-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+/*Body formatting*/
+
+body {
+    background-color: rgb(102, 217, 255);
+    
+    
+
+    text-emphasis-color: orange;
+
+    position: static;
+    
+    
+    display: inline-block;
+
+    padding : 2rem;
+    border : 2px solid rgb(162, 48, 255);
+
+    margin-top: .5in;
+    margin-bottom: .5in;
+    margin-left: .75in;
+    margin-right: .75in;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+
+}
+
+/*Varying text colors depending on screen size*/
+
+@media screen and (max-height : 10in) { 
+    body{
+        color: hsla(0, 70%, 42%, 0.77); /*Graphic design is my passion /s*/
+    }
+ }
+
+@media screen and (max-height : 700px) { 
+    body{
+        color: tomato; 
+    }
+}
+
+body:hover{
+    color: red;
+}
+
+header{
+    font-size: 2em; /*Double font size of header*/
+    font-family: 'bebas_neueregular';
+    height: 400px;
+    width:6in;
+
+    position: relative;
+    left: 2em;
+
+    padding: 2rem;
+    /*border:   1in;*/
+
+    display: block;
+
+    border-style: solid;
+    border-color: rgb(0, 255, 13);
+    border-width: 10px;
+    border-radius: 1in;
+
+    text-align: center;
+
+    margin: auto;
+    padding: .25in .5in .5in .25in;
+
+}
+
+form{  
+    border : 2px solid rgb(162, 48, 255);
+}
+
+.testFlexBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.textGrid {
+    font-family: 'bebas_neueregular';
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: 20in;
+    grid-row-gap: 50px;
+    
+}
+
+
+p{
+    
+    font-size: 1.2em;
+    text-align: center;
+    max-width: 10in;
+    max-height: 4in;
+}
+
+p:active{
+    font-size: 5em;
+    text-decoration: palevioletred dotted overline;
+}
+
+ul{
+    margin: .5in .25in .25in .5in;
+    text-decoration: blue wavy underline;
+
+}
+
+ol{
+    text-decoration: red underline;
+}
+
+h2{
+    color: rgb(62, 235, 168)
+    
+
+}
+
+h4 {
+    font-size: 2rem;
+    height: 1cm;
+    color: rgb(255, 4, 234)
+
+    
+}
+
+  strong {
+    color: #00FF00;
+}
+
