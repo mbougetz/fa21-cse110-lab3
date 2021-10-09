@@ -8,7 +8,15 @@
 
 }
 
+/*Highlights whatever the cursor is hovered over*/
+*:hover{
+    background-color: rgba(98, 148, 145, 0.315);
+}
 
+/*Highlights pols in teal*/
+#polls{
+    background-color: teal;
+}
 
 /*Body formatting*/
 
@@ -88,10 +96,16 @@ form{
     border : 2px solid rgb(162, 48, 255);
 }
 
+
+
 .testFlexBox{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.textGrid > .textChunk{
+    text-decoration: royalblue dotted underline;
 }
 
 .textGrid {
@@ -101,6 +115,11 @@ form{
     grid-template-columns: 20in;
     grid-row-gap: 50px;
     
+}
+
+.textChunk.miniText{
+    font-weight: bolder;
+    color:blue;
 }
 
 
@@ -117,15 +136,13 @@ p:active{
     text-decoration: palevioletred dotted overline;
 }
 
-ul{
+ul, ol{
     margin: .5in .25in .25in .5in;
-    text-decoration: blue wavy underline;
+    text-decoration: blue underline;
 
 }
 
-ol{
-    text-decoration: red underline;
-}
+
 
 h2{
     color: rgb(62, 235, 168)
@@ -143,5 +160,21 @@ h4 {
 
   strong {
     color: #00FF00;
+}
+
+ul li{
+    padding: 4px;
+}
+
+ul, ol ~ li{
+    text-decoration: orchid dotted overline;
+}
+
+a[href="https://en.wikipedia.org/wiki/Mate_(drink)"] {
+    text-decoration: plum underline;
+  }
+
+  p + p {
+    font-family: 'bebas_neueregular';
 }
 
